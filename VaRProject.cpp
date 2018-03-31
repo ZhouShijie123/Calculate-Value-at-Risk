@@ -38,20 +38,6 @@ int main(){
 	double* meanPtr = getMean();
 	string* title = getTitle();
 	VG_VaR(futuresPortfolio, optionsPortfolio, covMat, title, nCol, meanPtr);
-
-
-	//Delta Normal Value at Risk
-	cout << "================================" << endl;
-	cout << "Delta Normal Value at Risk: " << endl;
-	deltaNormal(futuresPortfolio,optionsPortfolio,covMat);
-	cout << "================================" << endl;
-	
-	//Delta Gamma Value at Risk
-	cout << "================================" << endl;
-	cout << "Delta Gamma Value at Risk: " << endl;
-	//deltaGamma(futuresPortfolio,optionsPortfolio,covMat,meanPtr,title,col);
-	cout << "================================" << endl;
-
 	
 	//Historical Value at Risk
 	cout << "================================" << endl;
