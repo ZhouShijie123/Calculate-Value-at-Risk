@@ -1,1 +1,2 @@
-
+Assume the return of the futres are variance gamma distribution. First derive the pricing model for options. 
+And calibrate the parameters by Nelder Method. Then do the simulation
