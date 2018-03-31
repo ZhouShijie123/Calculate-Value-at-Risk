@@ -37,7 +37,7 @@ int main(){
 	double ** covMat = getCovMat(nCol);
 	double* meanPtr = getMean();
 	string* title = getTitle();
-	VG_VaR(futuresPortfolio, optionsPortfolio, covMat, title, nCol, meanPtr);
+	
 	
 	//Historical Value at Risk
 	cout << "================================" << endl;
@@ -50,7 +50,12 @@ int main(){
 	cout << "MonteCarlo Value at Risk: " << endl;
 	MonteCarloVaR(futuresPortfolio, optionsPortfolio, impliedVol_grid, covMat, title, nCol);
 	cout << "================================" << endl;
-
+	
+	//MonteCarlo Value at Risk
+	cout << "================================" << endl;
+	cout << "MonteCarlo Value at Risk(Variance Gamma): " << endl;
+	VG_VaR(futuresPortfolio, optionsPortfolio, covMat, title, nCol, meanPtr);
+	cout << "================================" << endl;
 
 	cin.get();
 	return 0;
