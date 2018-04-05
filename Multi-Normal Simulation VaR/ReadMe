@@ -1,1 +1,3 @@
-Have the assumption that the return is normal distribution
+Have the assumption that the return is normal distribution. Simulate 1000 times the return of future in the tomorrow. Then 
+used the pricing model to price the options in the portfolio. Add the value of the futures and options. Then we can have the 
+value of the portfolio. 
